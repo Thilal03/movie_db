@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Movie;
-use App\Models\DB;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
