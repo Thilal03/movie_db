@@ -6,6 +6,7 @@ use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Movie;
 use Illuminate\Database\Seeder;
+use Database\Factories\MovieFactory;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,13 +15,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::factory(10)->create();
 
         // User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $this->call(categoryseeder::class);
-        movie::factory(50)->create();
+
+        // $this ->call(CategorySeeder::class);
+        // Movie::factory(50)->create();
+    
     }
 }
